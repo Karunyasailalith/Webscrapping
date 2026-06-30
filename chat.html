@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Article Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #020617;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .chat-wrapper {
+      width: 100%;
+      max-width: 900px;
+      height: 85vh;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      border-radius: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.8);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(30, 64, 175, 0.3));
+    }
+
+    .chat-header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, #38bdf8, #6366f1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #0b1120;
+      font-size: 18px;
+    }
+
+    .chat-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .chat-subtitle {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .chat-header-right {
+      font-size: 11px;
+      color: #a5b4fc;
+      border-radius: 999px;
+      border: 1px solid rgba(129, 140, 248, 0.6);
+      padding: 4px 10px;
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    .chat-messages {
+      flex: 1;
+      padding: 16px 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      scroll-behavior: smooth;
+    }
+
+    .message {
+      max-width: 80%;
+      padding: 10px 12px;
+      border-radius: 16px;
+      font-size: 14px;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .message.bot {
+      align-self: flex-start;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .message.user {
+      align-self: flex-end;
+      background: linear-gradient(to right, #4f46e5, #06b6d4);
+      color: white;
+    }
+
+    .chat-footer {
+      padding: 12px 16px;
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    .input-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    #question-input {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.9);
+      color: #e5e7eb;
+      font-size: 14px;
+      outline: none;
+    }
+
+    #question-input::placeholder {
+      color: #6b7280;
+    }
+
+    #send-btn {
+      border: none;
+      border-radius: 999px;
+      padding: 10px 16px;
+      background: linear-gradient(to right, #4f46e5, #22c55e);
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 8px 24px rgba(79, 70, 229, 0.5);
+    }
+
+    #send-btn:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none;
+    }
+
+    .footer-hint {
+      margin-top: 6px;
+      font-size: 11px;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .chat-wrapper {
+        height: 90vh;
+        border-radius: 18px;
+      }
+
+      .message {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-wrapper">
+    <header class="chat-header">
+      <div class="chat-header-left">
+        <div class="logo-circle">A</div>
+        <div>
+          <div class="chat-title">AI Article Chatbot</div>
+        </div>
+      </div>
+      <div class="chat-header-right">
+        FastAPI • Local Qwen Model
+      </div>
+    </header>
+
+    <main id="messages" class="chat-messages">
+      <!-- Default greeting -->
+      <div class="message bot">
+        👋 Hello! How can I help you today?
+      </div>
+    </main>
+
+    <footer class="chat-footer">
+      <div class="input-row">
+        <input
+          id="question-input"
+          type="text"
+          placeholder="Ask something from AI Article'"
+        />
+        <button id="send-btn">
+          Send
+        </button>
+      </div>
+      <div class="footer-hint">
+        Press Enter to send • Backend: <code>POST /ask</code> on <code>http://127.0.0.1:8000</code>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const API_URL = "http://127.0.0.1:8000/ask"; // your FastAPI endpoint
+
+    const messagesEl = document.getElementById("messages");
+    const inputEl = document.getElementById("question-input");
+    const sendBtn = document.getElementById("send-btn");
+
+    function appendMessage(text, sender = "bot") {
+      const div = document.createElement("div");
+      div.className = `message ${sender}`;
+      div.textContent = text;
+      messagesEl.appendChild(div);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    async function sendQuestion() {
+      const question = inputEl.value.trim();
+      if (!question) return;
+
+      // Show user message
+      appendMessage(question, "user");
+      inputEl.value = "";
+      inputEl.disabled = true;
+      sendBtn.disabled = true;
+
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "accept": "application/json",
+          },
+          body: JSON.stringify({ question }),
+        });
+
+        if (!response.ok) {
+          const text = await response.text();
+          appendMessage("❌ Error from server: " + text, "bot");
+        } else {
+          const data = await response.json();
+          appendMessage(data.answer || "(No answer field returned)", "bot");
+        }
+      } catch (err) {
+        appendMessage("⚠️ Request failed: " + err.message, "bot");
+      } finally {
+        inputEl.disabled = false;
+        sendBtn.disabled = false;
+        inputEl.focus();
+      }
+    }
+
+    sendBtn.addEventListener("click", sendQuestion);
+
+    inputEl.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendQuestion();
+      }
+    });
+  </script>
+</body>
+</html>

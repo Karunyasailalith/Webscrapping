@@ -1,0 +1,8 @@
+requests
+bs4
+torch
+fastapi
+uvicorn
+transformers
+pydantic
+uvicorn chatbot:app --reload (for chatbot testing)

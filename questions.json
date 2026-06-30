@@ -1,0 +1,338 @@
+{
+  "Introduction": [
+    "What is artificial intelligence?",
+    "What kinds of tasks can artificial intelligence perform?",
+    "What are some high-profile applications of AI?",
+    "What are the traditional goals of AI research?",
+    "How did the AI boom start in the 2010s and 2020s?",
+    "Why are there ethical concerns and existential risk discussions around AI?"
+  ],
+  "Goals": [
+    "What are the main goals of artificial intelligence?",
+    "How has the general problem of simulating intelligence been broken into subproblems?",
+    "What traits or capabilities do researchers expect an intelligent system to display?"
+  ],
+  "Reasoning and problem-solving": [
+    "How did early AI researchers model human reasoning and problem-solving?",
+    "What is combinatorial explosion in AI reasoning algorithms?",
+    "Why is accurate and efficient reasoning still an unsolved problem in AI?"
+  ],
+  "Knowledge representation": [
+    "What is knowledge representation in AI?",
+    "What is a knowledge base and an ontology?",
+    "What kinds of things must a knowledge base be able to represent?",
+    "Why is commonsense knowledge difficult to represent in AI systems?",
+    "What is the knowledge acquisition problem in AI?"
+  ],
+  "Planning and decision-making": [
+    "What is an agent and a rational agent in AI?",
+    "What is the difference between automated planning and automated decision-making?",
+    "What is utility and expected utility in decision-making agents?",
+    "How does classical planning differ from planning under uncertainty?",
+    "What is a Markov decision process in AI?",
+    "How is game theory used in AI decision-making?"
+  ],
+  "Learning": [
+    "What is machine learning in the context of AI?",
+    "What is the difference between supervised and unsupervised learning?",
+    "What are classification and regression in supervised learning?",
+    "What is reinforcement learning?",
+    "What is transfer learning?",
+    "How is deep learning related to machine learning?",
+    "What does computational learning theory study?"
+  ],
+  "Natural language processing": [
+    "What is natural language processing (NLP)?",
+    "What kinds of tasks does NLP include?",
+    "Why did early NLP systems struggle with word-sense disambiguation?",
+    "What are word embeddings and transformers in modern NLP?",
+    "How have GPT-style models impacted NLP performance on real-world tasks?"
+  ],
+  "Perception": [
+    "What is machine perception in AI?",
+    "What is computer vision?",
+    "What kinds of tasks fall under machine perception?"
+  ],
+  "Social intelligence": [
+    "What is affective computing?",
+    "How do some virtual assistants attempt to simulate emotions or conversational style?",
+    "What are examples of successes in sentiment analysis and multimodal sentiment analysis?",
+    "Why can affective computing give users an unrealistic conception of AI intelligence?"
+  ],
+  "General intelligence": [
+    "What is artificial general intelligence (AGI)?",
+    "What would a machine with artificial general intelligence be capable of?"
+  ],
+  "Techniques": [
+    "What kinds of techniques does AI research use to accomplish its goals?",
+    "Why does AI draw on fields such as statistics, optimization, and economics?"
+  ],
+  "Search and optimization": [
+    "How does AI use search to solve problems?",
+    "What is the difference between state space search and local search?",
+    "What is means-ends analysis in planning?",
+    "Why are exhaustive searches usually not sufficient in real-world problems?",
+    "What are heuristics in search?",
+    "What is adversarial search and where is it used?",
+    "What is gradient descent and how is it used in neural networks?",
+    "What is evolutionary computation in AI?",
+    "What is swarm intelligence and which algorithms are based on it?"
+  ],
+  "Logic": [
+    "What is the role of formal logic in AI?",
+    "What is the difference between propositional logic and predicate logic?",
+    "What is deductive reasoning in logic?",
+    "How is problem-solving related to building proof trees?",
+    "What are Horn clauses and how are they used in problem-solving?",
+    "Why is inference in first-order logic undecidable and intractable?",
+    "What is fuzzy logic and how does it handle partial truth?",
+    "What are non-monotonic logics and why are they important?"
+  ],
+  "Probabilistic methods for uncertain reasoning": [
+    "Why does AI often need to deal with incomplete or uncertain information?",
+    "What probabilistic tools are used in AI for decision-making and planning?",
+    "What are Bayesian networks and what can they be used for?",
+    "How are probabilistic algorithms used for filtering, prediction, and smoothing?",
+    "What are examples of temporal probabilistic models such as hidden Markov models or Kalman filters?"
+  ],
+  "Classifiers and statistical learning methods": [
+    "What is the difference between classifiers and controllers in AI?",
+    "What is a classifier in machine learning?",
+    "What is a dataset in supervised learning?",
+    "What are examples of common classifiers such as decision trees, k-nearest neighbors, SVMs, naive Bayes, and neural networks?"
+  ],
+  "Artificial neural networks": [
+    "What is an artificial neural network?",
+    "How do artificial neurons roughly model biological neurons?",
+    "What is a deep neural network?",
+    "How does backpropagation train neural networks?",
+    "What are feedforward neural networks and perceptrons?",
+    "What are recurrent neural networks (RNNs) and LSTMs used for?",
+    "What are convolutional neural networks (CNNs) and why are they effective in image processing?"
+  ],
+  "Deep learning": [
+    "What is deep learning?",
+    "How do multiple layers in a deep network extract higher-level features?",
+    "In what subfields of AI has deep learning significantly improved performance?",
+    "Why did deep learning become successful between 2012 and 2015?",
+    "What roles did GPUs and large datasets like ImageNet play in deep learning’s success?"
+  ],
+  "GPT": [
+    "What are generative pre-trained transformers (GPT)?",
+    "How are GPT models pre-trained?",
+    "What is a token in the context of GPT models?",
+    "How do GPT models generate text?",
+    "What is reinforcement learning from human feedback (RLHF) and why is it used?",
+    "What are hallucinations in GPT models?",
+    "What are examples of current GPT-based services and multimodal models?"
+  ],
+  "Hardware and software": [
+    "How did GPUs become central to large-scale machine learning?",
+    "What programming languages are commonly used in AI research?",
+    "What is Moore’s law and how does it relate to hardware improvements?",
+    "What is Huang’s law in the context of GPU improvements?"
+  ],
+  "Applications": [
+    "What are some key applications of AI and machine learning in the 2020s?",
+    "How is AI used in search engines and recommendation systems?",
+    "How is AI used in virtual assistants and autonomous vehicles?",
+    "What is the role of AI in translation, facial recognition, and image labeling?",
+    "What is a chief automation officer (CAO)?"
+  ],
+  "Health and medicine": [
+    "How is AI used to support health and medical research?",
+    "What did AlphaFold 2 achieve in protein structure prediction?",
+    "How has AI contributed to antibiotic discovery?",
+    "How is AI being used to accelerate drug discovery for diseases like Parkinson’s?"
+  ],
+  "Games": [
+    "How have game-playing programs been used to test AI techniques?",
+    "What was Deep Blue’s achievement in chess?",
+    "What did IBM Watson accomplish on Jeopardy!?",
+    "What is AlphaGo and what milestones did it reach in Go?",
+    "What is AlphaStar and what did it achieve in StarCraft II?",
+    "How has AI performed in games like poker, Gran Turismo, and open-world video games?",
+    "What is SIMA and what is its significance in game-playing AI?"
+  ],
+  "Mathematics": [
+    "How are large language models used in mathematics?",
+    "What challenges do LLMs face when solving math problems?",
+    "What is Qwen2-Math and what performance has it shown?",
+    "What is rStar-Math and how does it improve reasoning in math tasks?",
+    "What are examples of specialized AI models for mathematical problem solving?",
+    "How can natural language math problems be converted to formal languages like Lean?",
+    "What is Gemini Deep Think and what has it achieved?",
+    "How is topological deep learning related to mathematics?"
+  ],
+  "Finance": [
+    "How is AI used in the finance sector?",
+    "What are robot advisers in finance?",
+    "What concerns exist about AI’s impact on jobs in banking and financial planning?"
+  ],
+  "Military": [
+    "How are AI technologies being deployed in the military?",
+    "What roles do AI systems play in command, control, and sensors?",
+    "How is AI used in intelligence, logistics, and autonomous vehicles?",
+    "In which conflicts has AI been used in military operations?"
+  ],
+  "Generative AI": [
+    "What is generative AI?",
+    "What kinds of data can generative AI models produce?",
+    "How do generative models learn to generate new data?",
+    "Why did generative AI become so prominent in the 2020s?",
+    "What are some major generative AI tools for text, images, and video?",
+    "Which companies are developing generative AI technologies?"
+  ],
+  "Agents": [
+    "What is an AI agent?",
+    "In what kinds of applications are AI agents used?",
+    "What constraints do AI agents operate under in real-world environments?",
+    "How do AI agents use learning algorithms to improve their performance?"
+  ],
+  "Web search": [
+    "What is Copilot Search and how does it work?",
+    "How does Copilot Search use AI to generate summaries and reasoning?",
+    "What is Google’s AI Search and AI Overviews?",
+    "How does AI Search keep users on the search page instead of clicking results?"
+  ],
+  "Sexuality": [
+    "How is AI used in applications related to sexuality and reproductive health?",
+    "What are AI-enabled menstruation and fertility trackers?",
+    "What are AI agents that simulate sexual or romantic partners?",
+    "How is AI used in non-consensual deepfake pornography and why is this a concern?",
+    "How can AI help identify online gender-based violence and grooming?"
+  ],
+  "Other industry-specific tasks": [
+    "How is AI used across different industries and institutions?",
+    "How is AI applied in evacuation and disaster management?",
+    "What are applications of AI in agriculture?",
+    "How is AI used in astronomy and space-related tasks?",
+    "How was AI used during the 2024 Indian elections?"
+  ],
+  "Ethics": [
+    "What kinds of benefits and risks does AI present?",
+    "What are some of the ethical concerns around AI deployment?",
+    "Why is it difficult to factor ethics and bias into some AI training processes?"
+  ],
+  "Risks and harm": [
+    "Why do machine learning algorithms raise privacy and surveillance concerns?",
+    "How do AI-powered devices collect and use personal information?",
+    "What techniques are used to preserve privacy in AI systems?",
+    "How does generative AI relate to copyright and fair use debates?",
+    "Why are big tech companies central in the commercial AI landscape?",
+    "How is AI increasing global power consumption and affecting energy infrastructure?",
+    "What concerns exist around AI data centers and nuclear power?",
+    "What are the projected greenhouse gas emissions from AI-related energy use?",
+    "How can recommender systems contribute to misinformation and filter bubbles?",
+    "How can generative AI and deepfakes be used for computational propaganda?",
+    "What are examples of bias in real-world AI systems like Google Photos and COMPAS?",
+    "Why doesn’t ‘fairness through blindness’ work in machine learning?",
+    "Why can machine learning reinforce past discrimination when used for prediction?",
+    "What are different notions of fairness in AI and why are they hard to operationalize?",
+    "Why is explainability difficult for deep neural networks?",
+    "What are some examples where machine learning systems learned unintended correlations?",
+    "Why is the right to an explanation important for algorithmic decisions?",
+    "What is the XAI program and what does it aim to address?",
+    "What tools exist to improve transparency of AI models (e.g., SHAP, LIME)?",
+    "How can AI be used by bad actors, including in autonomous weapons?",
+    "Why are lethal autonomous weapons considered a serious risk?",
+    "How does AI empower authoritarian governments in surveillance and control?",
+    "How might AI assist in designing harmful biological or chemical agents?",
+    "What are concerns about AI-driven job losses and automation?",
+    "Why might AI particularly affect middle-class jobs?",
+    "What are debates around long-term existential risk from AI?",
+    "What are some expert opinions on AI extinction risk and how do they differ?"
+  ],
+  "Ethical machines and alignment": [
+    "What is meant by friendly AI?",
+    "Why does Eliezer Yudkowsky argue that friendly AI should be a research priority?",
+    "What is machine ethics or computational morality?",
+    "What are artificial moral agents?",
+    "What are Stuart Russell’s principles for provably beneficial machines?"
+  ],
+  "Open source": [
+    "Who are some active organizations in the AI open-source community?",
+    "What are open-weight models?",
+    "Why are open-weight models useful, and how can they be misused?",
+    "Why do some researchers warn about releasing powerful open-weight models?",
+    "What safeguards are proposed for future powerful models?"
+  ],
+  "Frameworks": [
+    "What are some major ethical AI frameworks and declarations?",
+    "Why is it important to consider social and ethical implications at all stages of AI development?",
+    "What is the UK AI Safety Institute’s Inspect tool and what is it used for?"
+  ],
+  "Regulation": [
+    "What is meant by regulation of artificial intelligence?",
+    "How has the number of AI-related laws changed since 2016?",
+    "Which countries have adopted national AI strategies?",
+    "What is the Global Partnership on Artificial Intelligence?",
+    "What is the EU Artificial Intelligence Act?",
+    "What is the Council of Europe’s Framework Convention on AI and human rights?",
+    "What do surveys show about public attitudes toward AI?",
+    "What were the goals of the AI Safety Summit and AI Seoul Summit?"
+  ],
+  "History": [
+    "How did the study of logic and computation lead to AI?",
+    "What contributions did Alan Turing make to AI?",
+    "When and where was the field of AI officially founded?",
+    "What was the AI winter and why did it occur?",
+    "How did expert systems revive AI in the 1980s?",
+    "What led to the shift toward sub-symbolic approaches and connectionism?",
+    "How did deep learning rise to prominence in the 2010s?",
+    "How did fairness and alignment become central research topics?",
+    "What milestones like AlphaGo and GPT-3 contributed to the modern AI boom?"
+  ],
+  "Philosophy": [
+    "What philosophical questions are raised by artificial intelligence?",
+    "Why are consciousness and machine minds important in AI philosophy?",
+    "How have rapid AI advancements intensified philosophical discussions?"
+  ],
+  "Defining artificial intelligence": [
+    "How did Alan Turing propose to think about the question ‘can machines think’?",
+    "What is the Turing test?",
+    "How do Russell and Norvig define intelligence in AI?",
+    "How did John McCarthy define intelligence?",
+    "What alternative definition of intelligence has Google proposed?",
+    "Why is the term ‘AI’ sometimes criticized as vague or overused?",
+    "What debates exist over whether large language models are truly intelligent?"
+  ],
+  "Evaluating approaches to AI": [
+    "Why hasn’t a single unifying theory guided AI research?",
+    "What is symbolic AI or GOFAI?",
+    "What is Moravec’s paradox?",
+    "Why did critics like Hubert Dreyfus argue against purely symbolic approaches?",
+    "What are the concerns with sub-symbolic and statistical approaches?",
+    "What is neuro-symbolic AI?",
+    "Who are ‘neats’ and ‘scruffies’ in AI, and how do they differ?",
+    "What is soft computing and why is it important?",
+    "Why is there debate about focusing on AGI versus narrow AI?"
+  ],
+  "Machine consciousness, sentience, and mind": [
+    "What is the debate about whether machines can have minds or consciousness?",
+    "What are the ‘hard’ and ‘easy’ problems of consciousness according to David Chalmers?",
+    "What is computationalism in philosophy of mind?",
+    "What is John Searle’s Chinese room argument?",
+    "Why might sentient AI raise questions about rights and welfare?",
+    "What is ‘electronic personhood’ and why was it proposed?",
+    "Why do some fear that AI sentience could become a moral blind spot?"
+  ],
+  "Superintelligence and the singularity": [
+    "What is superintelligence?",
+    "What is the intelligence explosion or singularity?",
+    "Why might self-improvement in AI lead to runaway intelligence gains?",
+    "Why can exponential improvement in technologies not continue indefinitely?"
+  ],
+  "Transhumanism": [
+    "What is transhumanism in the context of AI and humans?",
+    "What have Hans Moravec, Kevin Warwick, and Ray Kurzweil predicted about human–machine merging?",
+    "Why do some see AI as the next step in evolution?"
+  ],
+  "In fiction": [
+    "How has AI appeared historically in fiction?",
+    "What is the common ‘Frankenstein’ trope in AI stories?",
+    "What are some examples of hostile AI in movies and books?",
+    "What are Isaac Asimov’s Three Laws of Robotics and how are they viewed by researchers?",
+    "How does AI fiction explore the question of what makes us human?"
+  ]
+}
